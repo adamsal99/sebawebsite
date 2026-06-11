@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 75 5% 90%;
+    --foreground: 200 10% 15%;
+
+    --card: 60 5% 95%;
+    --card-foreground: 200 10% 15%;
+
+    --popover: 60 5% 95%;
+    --popover-foreground: 200 10% 15%;
+
+    --primary: 180 13% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 75 4% 85%;
+    --secondary-foreground: 200 10% 20%;
+
+    --muted: 75 4% 87%;
+    --muted-foreground: 200 5% 45%;
+
+    --accent: 20 90% 62%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 75 5% 80%;
+    --input: 75 5% 82%;
+    --ring: 180 13% 48%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 60 5% 93%;
+    --sidebar-foreground: 200 10% 20%;
+    --sidebar-primary: 180 13% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 75 4% 87%;
+    --sidebar-accent-foreground: 200 10% 20%;
+    --sidebar-border: 75 5% 80%;
+    --sidebar-ring: 180 13% 48%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(180 13% 48%), hsl(180 18% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(20 90% 62%), hsl(25 95% 65%));
+    --shadow-glow: 0 0 40px hsl(180 13% 48% / 0.1);
+    --shadow-card: 0 4px 30px hsl(0 0% 0% / 0.05);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  .glow-border {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glass {
+    @apply backdrop-blur-xl;
+    background: hsl(var(--background) / 0.85);
+    border-bottom: 1px solid hsl(var(--border));
+  }
+}

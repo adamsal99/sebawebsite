@@ -1,0 +1,9 @@
+# SEBA
+
+> AI & digital consulting for the Gulf healthcare market. SEBA builds Arabic-first clinical AI tools, supports MENA market entry, and provides strategic advisory to hospitals, governments, and healthtech companies.
+
+## Pages
+
+- [Home](/): Overview of SEBA's services, team, process, and approach to AI in Gulf healthcare.
+- [Solutions](/solutions): Three Arabic-first clinical AI platforms in development — mental health assessment, emergency response, and patient navigation.
+- [Contact](/contact-us): Get in touch with the SEBA team.
